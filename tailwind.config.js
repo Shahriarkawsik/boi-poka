@@ -14,6 +14,7 @@ export default {
         'color2.05': "rgba(35, 190, 10,0.05)",
         'color3': "rgb(89, 198, 210)",
         'color4': "rgb(243, 243, 243)",
+        'color5': "rgb(80, 177, 201)",
       },
       fontFamily:{
         'WorkSans': "Work Sans",

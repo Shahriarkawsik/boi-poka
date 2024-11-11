@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import '../src/index.css'
 
 import {
@@ -11,6 +10,7 @@ import Root from './components/Root/Root.jsx';
 import RegistrationForm from './components/Registration/RegistrationForm.jsx';
 import SignIn from './components/SignIn/SignIn.jsx';
 import Home from './components/Home/Home.jsx';
+import BookDetails from './components/BookDetails/BookDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: '/book/:bookId',
+        element: <BookDetails></BookDetails>,
+        loader: () => fetch(`/booksData.json`),
       },
       {
         path: '/signIn',
