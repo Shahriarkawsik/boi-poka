@@ -19,7 +19,7 @@ const BookDetails = () => {
         <hr className="border-t border-color1.15"/>
         <p className="text-color1.8 font-medium text-xl leading-6 font-WorkSans">{category}</p>
         <hr className="border-t border-color1.15"/>
-        <p className="font-WorkSans text-color1.8"><span className="font-bold">Review : </span>{review}</p>
+        <p className="font-WorkSans text-color1.8 text-justify"><span className="font-bold">Review : </span>{review}</p>
         <div className="space-x-4 flex gap-3 items-center">
           <h1 className="font-bold text-color1">Tag</h1>
               {
