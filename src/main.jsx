@@ -8,9 +8,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './components/Root/Root.jsx';
-import Banner from './components/Banner/Banner.jsx';
 import RegistrationForm from './components/Registration/RegistrationForm.jsx';
 import SignIn from './components/SignIn/SignIn.jsx';
+import Home from './components/Home/Home.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Banner></Banner>
+        element: <Home></Home>
       },
       {
         path: '/signIn',

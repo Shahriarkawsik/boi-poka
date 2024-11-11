@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav className="w-11/12 lg:w-4/5 mx-auto navbar bg-base-100 ">
+    <nav className="w-11/12 lg:w-4/5 mx-auto navbar  ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,13 +21,14 @@ const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <button className="text-color2 rounded-lg border border-color2 px-5 py-3 text-18 font-semibold leading-5"><NavLink to={'/'}>Home</NavLink></button>
-            <li className="py-3 text-18 text-color1.8 leading-5">
+            className="max-lg:menu max-lg:menu-sm dropdown-content max-lg:bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <button className="text-color2 rounded-lg border border-color2 px-5 py-3 text-18 font-semibold leading-5"><NavLink to={'/home'}>Home</NavLink></button>
+            <li className="text-18 text-color1.8 leading-5 py-3">
               <NavLink >Listed Books</NavLink>
             </li>
-            <li className="py-3 text-18 text-color1.8 leading-5">
+            <li className=" text-18 bg-white text-color1.8 leading-5 py-3">
             <NavLink >Pages to Read</NavLink>
+            
             </li>
           </ul>
         </div>
